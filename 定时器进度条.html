@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <title>定时器进度条</title>
+    <style type="text/css">
+        .loading-container{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+        }
+        .loading-container img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <img id="loading" src="./loading.gif" alt="">
+    </div>
+    <div class="imgList">
+        <img src="https://www.gratisography.com/pictures/438_1.jpg" alt="">
+        <img src="https://www.gratisography.com/pictures/439_1.jpg" alt="">
+        <img src="https://www.gratisography.com/pictures/436_1.jpg" alt="">
+        <img src="https://www.gratisography.com/pictures/437_1.jpg" alt="">
+        <img src="https://www.gratisography.com/pictures/434_1.jpg" alt="">
+    </div>
+    <script type="text/javascript">
+        setTimeout(function () {
+            $('.loading-container').fadeOut();
+        },3000);
+    </script>
+</body>
+</html>
